@@ -1,0 +1,179 @@
+*{  
+    scroll-behavior: smooth;
+  }
+  body{
+    font-size: 16px !important;
+    font-family: 'Poppins', sans-serif;
+  }
+  /* --------------- nav start --------------- */
+  
+  header{
+  position: fixed;
+  background-color: #000;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 30;
+  }
+  .main-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  }
+  .main-nav ul{
+  list-style-type: none;
+  display: flex;
+  margin-bottom: 0 !important;
+  }
+  .main-nav .logo{
+  font-size: 1.5em;
+  color: #ff511a;
+  text-decoration: none;
+  font-weight: 600;
+  }
+  .main-nav li{
+  padding: 10px 10px !important;
+  margin-left: 15px !important;
+  }
+  
+  .main-nav a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 500;
+  transition: 0.5s ease ;
+  
+  }
+  .main-nav li:hover a{
+  transition: all 0.5s ease;
+  color: #ff511a;
+  }
+  
+  /* --------------- nav end --------------- */
+  /* --------------- main header banner start --------------- */
+  
+  /* --------------- main header banner end --------------- */
+  
+  
+  .section-heading{
+    text-align: center;
+  }
+  .section-heading h6{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ff511a;
+    font-weight: 700;
+  }
+  .section-heading h4{
+    margin-top: 10px;
+    line-height: 40px;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #212741;
+    margin-bottom: 60px;
+  }
+  
+  footer {
+    
+    background-color: #181d30;
+    text-align: center;
+    padding: 30px 0px;
+  
+  }
+  footer p {
+    color: #fff;
+    font-weight: 300;
+  }
+  footer p a {
+    color: #ff511a;
+  }
+  .social-icons a{
+    color: #fff;
+    font-size: 1.7em;
+    padding-right: 30px;
+  }
+  .btn-primary {
+    background-color: #ff511a !important; /* Turuncu renk */
+    border-color: #ff511a !important;
+  }
+  
+  
+  
+  
+  .calculator{
+  background-image: url(../images/12345.webp);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  padding: 80px 0px;
+  }
+  .calculator .left-image{
+  margin: -110px 45px -80px -50px;
+  }
+  .calculator .section-heading-con{
+  text-align: left;
+  }
+  .calculator .section-heading-con h4{
+  color: #fff;
+  margin-top: 10px;
+  line-height: 40px;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  }
+  
+  #calculate input::placeholder {
+  color: #190101; /* Kırmızı renk */
+  opacity: 1; /* Opaklık (varsayılan olarak bazı tarayıcılarda düşük olabilir) */
+  }
+  #calculate label{
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 5px;
+  }
+  #calculate input,
+  #calculate select{
+  background-color: rgba(121,134,151, 0.7);
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 42px;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 15px;
+  outline: none;
+  }  
+  #calculate select{
+  cursor: pointer;
+  }
+  #calculate button.orange-button{
+  font-size: 14px;
+  color: #150505;
+  background-color: #ff511a;
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  border: none;
+  transition: all .3s;
+  }
+  #calculate button.orange-button:hover{
+  opacity: 0.9;
+  }
+ 
+.btn-primary {
+    background-color: #ff511a !important; /* Turuncu renk */
+    border-color: #ff511a !important;
+  }
+
+
+  
+  
+  
+  
+  
+  

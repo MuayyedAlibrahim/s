@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Son Acil Durumlar ve Olaylar - Acil Yardım Yönetim Sistemi</title>
+
+    <!-- Google Fonts yazma tipi -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/son-olaylar.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Bootstrap CSS kütübhanesi -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+
+    <!-- all.min.CSS kütübhanesi -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- jQuery.JS kütübhanesi -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- bootstrap.bundle.JS kütübhanesi -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/mobile-menu.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="main-nav">
+                <a href="#" class="logo">ACİL YARDIM YÖNETİM SİSTEMİ <i class="fa-solid fa-ambulance"></i></a>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="#" class="active">Son Olaylar</a></li>
+                    <li><a href="Giriş-Yap.html">Giriş Yap</a></li>
+                    <li><a href="Kayıt-Ol.html" >Kayıt Ol</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Son Olaylar Listesi -->
+    <section class="recent-events">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading text-center mb-5">
+                        <h6>Güncel Bilgiler</h6>
+                        <h4>Son Acil Durumlar ve Olaylar</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Olay 1 -->
+                <div class="col-lg-3 mb-4">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span>05</span>
+                            <p>Mart 2025</p>
+                        </div>
+                        <div class="event-content">
+                            <h4>Çorum'da Sel Felaketi</h4>
+                            <p>Çorum'un kuzey ilçelerinde şiddetli yağışlar sonucu sel felaketi yaşandı. 3 köy tahliye edildi. Bölgede arama kurtarma çalışmaları devam ediyor. AFAD ekipleri olay yerinde müdahale çalışmalarını sürdürüyor.</p>
+                            <div class="event-details">
+                                <p><i class="fas fa-map-marker-alt"></i> Konum: Çorum, Kuzey İlçeleri</p>
+                                <p><i class="fas fa-users"></i> Etkilenen Kişi Sayısı: ~150</p>
+                                <p><i class="fas fa-clock"></i> Başlangıç: 05.03.2025 08:30</p>
+                            </div>
+                            <div class="event-status emergency">Acil Durum</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Olay 2 -->
+                <div class="col-lg-3 mb-4">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span>28</span>
+                            <p>Şubat 2025</p>
+                        </div>
+                        <div class="event-content">
+                            <h4>İzmir'de 4.2 Şiddetinde Deprem</h4>
+                            <p>İzmir'in Seferihisar ilçesi açıklarında 4.2 büyüklüğünde deprem meydana geldi. Can kaybı bildirilmedi. Hafif hasarlı binalar tespit edildi. Vatandaşlar tedbirli olmaya devam ediyor.</p>
+                            <div class="event-details">
+                                <p><i class="fas fa-map-marker-alt"></i> Konum: İzmir, Seferihisar</p>
+                                <p><i class="fas fa-ruler-vertical"></i> Derinlik: 16.7 km</p>
+                                <p><i class="fas fa-clock"></i> Zaman: 28.02.2025 15:45</p>
+                            </div>
+                            <div class="event-status warning">Uyarı</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Olay 3 -->
+                <div class="col-lg-3 mb-4">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span>25</span>
+                            <p>Şubat 2025</p>
+                        </div>
+                        <div class="event-content">
+                            <h4>Ankara'da Orman Yangını</h4>
+                            <p>Ankara'nın Kızılcahamam ilçesinde orman yangını çıktı. Yangın kontrol altına alındı. Soğutma çalışmaları devam ediyor. Yaklaşık 5 hektarlık alan etkilendi.</p>
+                            <div class="event-details">
+                                <p><i class="fas fa-map-marker-alt"></i> Konum: Ankara, Kızılcahamam</p>
+                                <p><i class="fas fa-tree"></i> Etkilenen Alan: ~5 hektar</p>
+                                <p><i class="fas fa-clock"></i> Başlangıç: 25.02.2025 12:20</p>
+                            </div>
+                            <div class="event-status controlled">Kontrol Altında</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Olay 4 -->
+                <div class="col-lg-3 mb-4">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span>20</span>
+                            <p>Şubat 2025</p>
+                        </div>
+                        <div class="event-content">
+                            <h4>Trabzon'da Heyelan</h4>
+                            <p>Trabzon'un Araklı ilçesinde şiddetli yağışlar sonucu heyelan meydana geldi. 2 ev tedbir amaçlı boşaltıldı. Bölgede çalışmalar sürüyor.</p>
+                            <div class="event-details">
+                                <p><i class="fas fa-map-marker-alt"></i> Konum: Trabzon, Araklı</p>
+                                <p><i class="fas fa-home"></i> Etkilenen Yapı: 2 konut</p>
+                                <p><i class="fas fa-clock"></i> Zaman: 20.02.2025 23:15</p>
+                            </div>
+                            <div class="event-status warning">Uyarı</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Olay 5 -->
+                <div class="col-lg-3 mb-4">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span>15</span>
+                            <p>Şubat 2025</p>
+                        </div>
+                        <div class="event-content">
+                            <h4>Antalya'da Fırtına Hasarı</h4>
+                            <p>Antalya'da etkili olan fırtına nedeniyle bazı bölgelerde ağaçlar devrildi, çatılar hasar gördü. Ekipler hasarın giderilmesi için çalışıyor.</p>
+                            <div class="event-details">
+                                <p><i class="fas fa-map-marker-alt"></i> Konum: Antalya Merkez</p>
+                                <p><i class="fas fa-wind"></i> Rüzgar Hızı: 85 km/s</p>
+                                <p><i class="fas fa-clock"></i> Süre: 15.02.2025 18:00-22:00</p>
+                            </div>
+                            <div class="event-status controlled">Kontrol Altında</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Olay 6 -->
+                <div class="col-lg-3 mb-4">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span>10</span>
+                            <p>Şubat 2025</p>
+                        </div>
+                        <div class="event-content">
+                            <h4>Erzurum'da Çığ Düşmesi</h4>
+                            <p>Erzurum'un Palandöken ilçesinde çığ düşmesi meydana geldi. Yol ulaşıma kapandı. Karla mücadele ekipleri çalışmalarını sürdürüyor.</p>
+                            <div class="event-details">
+                                <p><i class="fas fa-map-marker-alt"></i> Konum: Erzurum, Palandöken</p>
+                                <p><i class="fas fa-road"></i> Durum: Yol Kapalı</p>
+                                <p><i class="fas fa-clock"></i> Zaman: 10.02.2025 06:45</p>
+                            </div>
+                            <div class="event-status warning">Uyarı</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Olay 7 -->
+                <div class="col-lg-3 mb-4">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span>08</span>
+                            <p>Şubat 2025</p>
+                        </div>
+                        <div class="event-content">
+                            <h4>Bursa'da Kimyasal Sızıntı</h4>
+                            <p>Bursa'nın Nilüfer ilçesinde bir fabrikada kimyasal sızıntı meydana geldi. Bölge güvenlik çemberi altına alındı.</p>
+                            <div class="event-details">
+                                <p><i class="fas fa-map-marker-alt"></i> Konum: Bursa, Nilüfer</p>
+                                <p><i class="fas fa-industry"></i> Tesis: Kimya Fabrikası</p>
+                                <p><i class="fas fa-clock"></i> Zaman: 08.02.2025 14:30</p>
+                            </div>
+                            <div class="event-status emergency">Acil Durum</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Olay 8 -->
+                <div class="col-lg-3 mb-4">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span>06</span>
+                            <p>Şubat 2025</p>
+                        </div>
+                        <div class="event-content">
+                            <h4>Eskişehir'de Trafik Kazası</h4>
+                            <p>Eskişehir-Ankara karayolunda zincirleme trafik kazası. 8 araç karıştı, yaralılar hastaneye kaldırıldı.</p>
+                            <div class="event-details">
+                                <p><i class="fas fa-map-marker-alt"></i> Konum: Eskişehir-Ankara Yolu</p>
+                                <p><i class="fas fa-car-crash"></i> Araç Sayısı: 8</p>
+                                <p><i class="fas fa-clock"></i> Zaman: 06.02.2025 07:15</p>
+                            </div>
+                            <div class="event-status controlled">Kontrol Altında</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Olay 9 -->
+                <div class="col-lg-3 mb-4">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span>04</span>
+                            <p>Şubat 2025</p>
+                        </div>
+                        <div class="event-content">
+                            <h4>Adana'da Yangın</h4>
+                            <p>Adana'nın Seyhan ilçesinde bir iş merkezinde yangın çıktı. İtfaiye ekipleri müdahale ediyor.</p>
+                            <div class="event-details">
+                                <p><i class="fas fa-map-marker-alt"></i> Konum: Adana, Seyhan</p>
+                                <p><i class="fas fa-building"></i> Yapı: İş Merkezi</p>
+                                <p><i class="fas fa-clock"></i> Zaman: 04.02.2025 16:45</p>
+                            </div>
+                            <div class="event-status warning">Uyarı</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Olay 10 -->
+                <div class="col-lg-3 mb-4">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span>02</span>
+                            <p>Şubat 2025</p>
+                        </div>
+                        <div class="event-content">
+                            <h4>Kayseri'de Gaz Sızıntısı</h4>
+                            <p>Kayseri'de bir apartmanda doğalgaz sızıntısı tespit edildi. Bina tahliye edildi, ekipler müdahale ediyor.</p>
+                            <div class="event-details">
+                                <p><i class="fas fa-map-marker-alt"></i> Konum: Kayseri, Melikgazi</p>
+                                <p><i class="fas fa-home"></i> Yapı: Apartman</p>
+                                <p><i class="fas fa-clock"></i> Zaman: 02.02.2025 20:30</p>
+                            </div>
+                            <div class="event-status controlled">Kontrol Altında</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Olay 11 -->
+                <div class="col-lg-3 mb-4">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span>31</span>
+                            <p>Ocak 2025</p>
+                        </div>
+                        <div class="event-content">
+                            <h4>Samsun'da Su Baskını</h4>
+                            <p>Samsun'un İlkadım ilçesinde şiddetli yağış sonucu su baskınları yaşandı. Ekipler çalışmalarını sürdürüyor.</p>
+                            <div class="event-details">
+                                <p><i class="fas fa-map-marker-alt"></i> Konum: Samsun, İlkadım</p>
+                                <p><i class="fas fa-water"></i> Durum: Su Baskını</p>
+                                <p><i class="fas fa-clock"></i> Zaman: 31.01.2025 22:15</p>
+                            </div>
+                            <div class="event-status warning">Uyarı</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Olay 12 -->
+                <div class="col-lg-3 mb-4">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span>29</span>
+                            <p>Ocak 2025</p>
+                        </div>
+                        <div class="event-content">
+                            <h4>Denizli'de Deprem</h4>
+                            <p>Denizli'nin Acıpayam ilçesinde 3.8 büyüklüğünde deprem meydana geldi. Can kaybı yok.</p>
+                            <div class="event-details">
+                                <p><i class="fas fa-map-marker-alt"></i> Konum: Denizli, Acıpayam</p>
+                                <p><i class="fas fa-ruler-vertical"></i> Derinlik: 7.2 km</p>
+                                <p><i class="fas fa-clock"></i> Zaman: 29.01.2025 03:40</p>
+                            </div>
+                            <div class="event-status controlled">Kontrol Altında</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Olay 13 -->
+                <div class="col-lg-3 mb-4">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span>27</span>
+                            <p>Ocak 2025</p>
+                        </div>
+                        <div class="event-content">
+                            <h4>Mersin'de Orman Yangını</h4>
+                            <p>Mersin'in Silifke ilçesinde orman yangını çıktı. Havadan ve karadan müdahale devam ediyor.</p>
+                            <div class="event-details">
+                                <p><i class="fas fa-map-marker-alt"></i> Konum: Mersin, Silifke</p>
+                                <p><i class="fas fa-tree"></i> Alan: Orman</p>
+                                <p><i class="fas fa-clock"></i> Zaman: 27.01.2025 13:20</p>
+                            </div>
+                            <div class="event-status emergency">Acil Durum</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Olay 14 -->
+                <div class="col-lg-3 mb-4">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span>25</span>
+                            <p>Ocak 2025</p>
+                        </div>
+                        <div class="event-content">
+                            <h4>Gaziantep'te İş Kazası</h4>
+                            <p>Gaziantep Organize Sanayi Bölgesi'nde bir fabrikada iş kazası meydana geldi. Yaralılar hastaneye kaldırıldı.</p>
+                            <div class="event-details">
+                                <p><i class="fas fa-map-marker-alt"></i> Konum: Gaziantep OSB</p>
+                                <p><i class="fas fa-industry"></i> Tesis: Fabrika</p>
+                                <p><i class="fas fa-clock"></i> Zaman: 25.01.2025 11:10</p>
+                            </div>
+                            <div class="event-status controlled">Kontrol Altında</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Olay 15 -->
+                <div class="col-lg-3 mb-4">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span>23</span>
+                            <p>Ocak 2025</p>
+                        </div>
+                        <div class="event-content">
+                            <h4>Konya'da Kar Yağışı</h4>
+                            <p>Konya'da yoğun kar yağışı nedeniyle bazı yollar ulaşıma kapandı. Karla mücadele çalışmaları sürüyor.</p>
+                            <div class="event-details">
+                                <p><i class="fas fa-map-marker-alt"></i> Konum: Konya</p>
+                                <p><i class="fas fa-snowflake"></i> Durum: Yoğun Kar</p>
+                                <p><i class="fas fa-clock"></i> Zaman: 23.01.2025 09:00</p>
+                            </div>
+                            <div class="event-status warning">Uyarı</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Olay 16 -->
+                <div class="col-lg-3 mb-4">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span>21</span>
+                            <p>Ocak 2025</p>
+                        </div>
+                        <div class="event-content">
+                            <h4>Van'da Çığ Tehlikesi</h4>
+                            <p>Van'ın yüksek kesimlerinde çığ tehlikesi nedeniyle uyarı yapıldı. Vatandaşlar dikkatli olmaları konusunda uyarıldı.</p>
+                            <div class="event-details">
+                                <p><i class="fas fa-map-marker-alt"></i> Konum: Van, Yüksek Kesimler</p>
+                                <p><i class="fas fa-mountain"></i> Risk: Çığ</p>
+                                <p><i class="fas fa-clock"></i> Zaman: 21.01.2025 16:00</p>
+                            </div>
+                            <div class="event-status warning">Uyarı</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Olay 17 -->
+                <div class="col-lg-3 mb-4">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span>19</span>
+                            <p>Ocak 2025</p>
+                        </div>
+                        <div class="event-content">
+                            <h4>Muğla'da Tekne Kazası</h4>
+                            <p>Muğla'nın Bodrum ilçesi açıklarında bir tekne kazası meydana geldi. Sahil Güvenlik ekipleri kurtarma çalışması yaptı.</p>
+                            <div class="event-details">
+                                <p><i class="fas fa-map-marker-alt"></i> Konum: Muğla, Bodrum</p>
+                                <p><i class="fas fa-ship"></i> Olay: Tekne Kazası</p>
+                                <p><i class="fas fa-clock"></i> Zaman: 19.01.2025 14:30</p>
+                            </div>
+                            <div class="event-status controlled">Kontrol Altında</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Olay 19 -->
+                <div class="col-lg-3 mb-4">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span>15</span>
+                            <p>Ocak 2025</p>
+                        </div>
+                        <div class="event-content">
+                            <h4>Mersin'de Kimyasal Sızıntı</h4>
+                            <p>Mersin Organize Sanayi Bölgesi'nde bir fabrikada kimyasal sızıntı meydana geldi. Çevre güvenliği sağlandı, uzman ekipler müdahale ediyor.</p>
+                            <div class="event-details">
+                                <p><i class="fas fa-map-marker-alt"></i> Konum: Mersin OSB</p>
+                                <p><i class="fas fa-industry"></i> Tesis: Kimya Tesisi</p>
+                                <p><i class="fas fa-clock"></i> Zaman: 15.01.2025 09:45</p>
+                            </div>
+                            <div class="event-status emergency">Acil Durum</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Olay 20 -->
+                <div class="col-lg-3 mb-4">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span>14</span>
+                            <p>Ocak 2025</p>
+                        </div>
+                        <div class="event-content">
+                            <h4>Bursa'da Elektrik Kesintisi</h4>
+                            <p>Bursa'nın 5 ilçesinde geniş çaplı elektrik kesintisi yaşanıyor. Kritik tesisler jeneratörle destekleniyor. Ekipler arızayı gidermeye çalışıyor.</p>
+                            <div class="event-details">
+                                <p><i class="fas fa-map-marker-alt"></i> Konum: Bursa, Merkez İlçeler</p>
+                                <p><i class="fas fa-bolt"></i> Etki: Geniş Çaplı Kesinti</p>
+                                <p><i class="fas fa-clock"></i> Zaman: 14.01.2025 16:20</p>
+                            </div>
+                            <div class="event-status warning">Uyarı</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Olay 18 -->
+                <div class="col-lg-3 mb-4">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span>17</span>
+                            <p>Ocak 2025</p>
+                        </div>
+                        <div class="event-content">
+                            <h4>Diyarbakır'da Trafik Kazası</h4>
+                            <p>Diyarbakır-Batman karayolunda yolcu otobüsü devrildi. Yaralılar hastaneye kaldırıldı, yol trafiğe kapatıldı.</p>
+                            <div class="event-details">
+                                <p><i class="fas fa-map-marker-alt"></i> Konum: Diyarbakır-Batman Yolu</p>
+                                <p><i class="fas fa-bus"></i> Araç: Yolcu Otobüsü</p>
+                                <p><i class="fas fa-clock"></i> Zaman: 17.01.2025 08:15</p>
+                            </div>
+                            <div class="event-status emergency">Acil Durum</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>© 2025 Acil Yardım Yönetim Sistemi. Tüm Hakları Saklıdır.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

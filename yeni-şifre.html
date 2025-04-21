@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şifremi Unuttum</title>
+
+    <!-- Google Fonts yazma tipi -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="assets/css/yeni-şifre.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Flatpickr Kütüphanesi -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <!-- Bootstrap CSS kütübhanesi -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+
+    <!-- Font Awesome CSS kütüphanesi -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- jQuery.JS kütübhanesi -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- bootstrap.bundle.JS kütübhanesi -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/mobile-menu.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+        <nav class="main-nav">
+            <a href="#" class="logo">Acil Alarm Yönetim Sistemi</a>
+            <ul>
+              <li><a href="index.html">Ana Sayfa</a></li>
+              <li><a href="Giriş-Yap.html">Giriş Yap</a></li>
+              <li><a href="Kayıt-Ol.html" >Kayıt Ol</a></li>
+          </ul>
+        </nav>
+    </div>
+  </header>
+
+  <section class="calculator" id="calculator">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="left"></div>
+        </div>
+        <br>
+        <div class="section-heading-con">
+          <h4>Yeni Şifrenizi Girin</h4>
+          <br>
+        </div>
+        <form action="update-password.php" method="post">
+            <div class="col-lg-12"></div>
+            <section class="login-form">
+              <div class="container">
+                  <div class="row justify-content-center">
+                      <div class="col-lg-6">
+                          <div class="login-box">
+                            <br>
+                            <h4 style="color:#ff511a !important;">Yeni Şifre</h4>
+                            <br>
+                            <div class="mb-3">
+                                <label for="newPassword" class="form-label">Yeni Şifre</label>
+                                <input type="password" name="newPassword" id="newPassword" class="form-control" placeholder="Yeni şifrenizi girin" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="confirmPassword" class="form-label">Yeni Şifreyi Onaylayın</label>
+                                <input type="password" name="confirmPassword" id="confirmPassword" class="form-control" placeholder="Şifrenizi tekrar girin" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Şifreyi Değiştir</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+      </section>  
+      
+  </section>  
+
+  <footer>
+    <div class="container">
+        <div class="col-lg-12">
+          <p>Tüm Hakları Saklıdır © 2024. Tasarlayan: <a href="https://muayyedalibrahim.github.io/.com" target="_blank">MUAYYED ALİBRAHİM</a></p>
+        </div>
+    </div>
+  </footer>
+
+</body>
+</html>

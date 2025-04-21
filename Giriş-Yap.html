@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doküman</title>
+
+
+    <!-- Google Fonts yazma tipi -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/Giriş-Yap.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/Giriş-Yap.js"></script>
+    <!-- Bootstrap CSS kütübhanesi -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- Font Awesome CSS kütübhanesi -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
+    <!-- jQuery.JS kütübhanesi -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- bootstrap.bundle.JS kütübhanesi -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/mobile-menu.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+        <nav class="main-nav">
+            <a href="#" class="logo">Acil Alarm Yönetim Sistem <i class="fa-solid fa-code"></i></a>
+            <ul>
+              <li><a href="index.html" >Ana Sayfa</a></li>
+              <li><a href="Giriş-Yap.html" class="active">Giriş Yap</a></li>
+              <li><a href="Kayıt-Ol.html" >Kayıt Ol</a></li>
+          </ul>
+        </nav>
+    </div>
+  </header>
+
+    
+  <section class="calculator" id="calculator">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="left"></div>
+        </div>
+        <br>
+        <div class="section-heading-con">
+          <h4>İlk Yardım Ve Uyarılar Almak İçin Kayıt Ol</h4>
+        </div>
+        <form id="calculate" action="submit.php" method="post">
+            <div class="col-lg-12"></div>
+            <section class="login-form">
+              <div class="container">
+                  <div class="row justify-content-center">
+                      <div class="col-lg-6">
+                          <div class="login-box">
+                            <br>
+                            <h4 class="log">Giriş Yap</h4>
+                          <form action="login.php" method="post">
+                                  <div class="mb-3">
+                                      <label for="email" class="form-label">E-posta Adresiniz</label>
+                                      <input type="email" name="email" id="email" class="form-control" placeholder="E-posta adresinizi girin" required>
+                                  </div>
+                                  <div class="mb-3">
+                                      <label for="password" class="form-label">Şifre</label>
+                                      <div class="input-group">
+                                          <input type="password" name="password" id="password" class="form-control" placeholder="Şifrenizi girin" required>
+                                          <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                                              <i class="fa fa-eye"></i>
+                                          </button>
+                                      </div>
+                                  </div>
+                                  <div class="mb-3 text-end">
+                                    <a href="şifre-unutmak.html">Şifremi Unuttum?</a>
+                                </div>                                
+                                  <button type="submit" class="btn btn-primary w-100">Giriş Yap</button>
+                              </form>
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+  </section>  
+    
+      <!-- Alt Bilgi Başlangıcı -->
+      <footer>
+        <div class="container">
+            <div class="col-lg-12">
+              <p>Tüm Hakları Saklıdır © 2024. Tasarlayan: <a href="https://muayyedalibrahim.github.io/.com" target="_blank">MUAYYED ALİBRAHİM</a></p>
+            </div>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-tiktok"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+      </footer>
+</body>
+</html>

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acil Yardım Yönetim Sistemi</title>
+
+    <!-- Google Fonts yazma tipi -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/emergency-style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Bootstrap CSS kütübhanesi -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+
+    <!-- all.min.CSS kütübhanesi -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Owl Carousel CSS kütübhanesi -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- Leaflet CSS kütüphanesi -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous">
+
+    <!-- Testimonials CSS -->
+    <link rel="stylesheet" href="assets/css/testimonials.css">
+  
+
+    <!-- jQuery.JS kütübhanesi -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- carousel.JS kütübhanesi -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- bootstrap.bundle.JS kütübhanesi -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Leaflet JS kütüphanesi -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
+
+    <!-- Ana JavaScript dosyası -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/mobile-menu.js"></script>
+</head>
+<body>
+    <!-- Header -->
+<!-- Başlık Bölümü Başlangıcı -->
+<header>
+  <div class="container">
+      <!-- Ana Navigasyon Menüsü -->
+      <nav class="main-nav">
+          <!-- Logo ve Marka Adı -->
+          <a href="#" class="logo">ACİL YARDIM YÖNETİM SİSTEMİ <i class="fa-solid fa-ambulance"></i></a>
+          <!-- Menü Öğeleri -->
+          <ul>
+            <li><a href="index.html" class="active">Ana Sayfa</a></li>
+            <li><a href="#son-olaylar">Son Olaylar</a></li>
+            <li><a href="Giriş-Yap.html">Giriş Yap</a></li>
+            <li><a href="Kayıt-Ol.html" >Kayıt Ol</a></li>
+
+        </ul>
+      </nav>
+  </div>
+</header>
+<!-- Başlık Bölümü Bitişi -->
+
+<!-- Ana Banner Alanı Başlangıcı -->
+<section class="main-banner" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/images/1234.jpg');">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-8">
+              <div class="header-text">
+                <h2>Acil Durum<br>&amp; Yardım Yönetim <em>Sistemi</em></h2>
+                  <div class="div-dec">
+                    <p>Acil durumlarda hızlı ve etkili müdahale için tasarlanmış kapsamlı bir yönetim sistemi. Afet durumlarında kaynakların doğru yönetimi, yardım taleplerinin hızlı değerlendirilmesi ve koordinasyonun sağlanması için güvenilir çözümler sunuyoruz.</p>
+                    <div class="buttons">
+                      <div class="green-button">
+                        <a href="acil-durum-bildir.html">Acil Durum Bildir</a>
+                      </div>
+                      <div class="orange-button">
+                        <a href="yardim-talep-et.html">Yardım Talep Et</a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- Ana Banner Alanı Bitişi -->
+
+<section class="services" id="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="service-h1">
+          <h1>Hizmetlerimiz</h1>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="service-item">
+          <i class="fas fa-exclamation-triangle"></i>
+          <h4>Acil Durum Yönetimi</h4>
+          <p>Afet ve acil durumlarda hızlı koordinasyon sağlayarak, kaynakların etkin kullanımını ve müdahale süreçlerinin yönetimini gerçekleştiriyoruz.</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="service-item">
+          <i class="fas fa-hands-helping"></i>
+          <h4>Yardım Talep Sistemi</h4>
+          <p>İhtiyaç sahiplerinin taleplerini hızlıca iletebilecekleri ve takip edebilecekleri kullanıcı dostu bir platform sunuyoruz.</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="service-item">
+          <i class="fas fa-map-marked-alt"></i>
+          <h4>Konum Bazlı Yardım Dağıtımı</h4>
+          <p>GPS teknolojisi ile yardım ekiplerinin en kısa sürede doğru lokasyona ulaşmasını sağlayan akıllı rota planlaması yapıyoruz.</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="service-item">
+          <i class="fas fa-database"></i>
+          <h4>Kaynak Yönetimi</h4>
+          <p>Mevcut kaynakların envanterini tutarak, ihtiyaç durumunda hızlı ve verimli şekilde dağıtımını sağlıyoruz.</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="service-item">
+          <i class="fas fa-users"></i>
+          <h4>Gönüllü Koordinasyonu</h4>
+          <p>Gönüllülerin yeteneklerine ve konumlarına göre organizasyonunu sağlayarak, yardım çalışmalarının verimliliğini artırıyoruz.</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="service-item">
+          <i class="fas fa-chart-line"></i>
+          <h4>Raporlama ve Analiz</h4>
+          <p>Gerçek zamanlı veri analizi ile acil durum müdahalelerinin etkinliğini ölçüyor ve sürekli iyileştirme sağlıyoruz.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="recent-events" id="son-olaylar">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-heading">
+          <h6>Güncel Bilgiler</h6>
+          <h4>Son Acil Durumlar ve Olaylar</h4>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="event-item">
+          <div class="event-date">
+            <span>05</span>
+            <p>Mart 2025</p>
+          </div>
+          <div class="event-content">
+            <h4>Çorum'da Sel Felaketi</h4>
+            <p>Çorum'un kuzey ilçelerinde şiddetli yağışlar sonucu sel felaketi yaşandı. 3 köy tahliye edildi.</p>
+            <div class="event-status emergency">Acil Durum</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="event-item">
+          <div class="event-date">
+            <span>28</span>
+            <p>Şubat 2025</p>
+          </div>
+          <div class="event-content">
+            <h4>İzmir'de 4.2 Şiddetinde Deprem</h4>
+            <p>İzmir'in Seferihisar ilçesi açıklarında 4.2 büyüklüğünde deprem meydana geldi. Can kaybı bildirilmedi.</p>
+            <div class="event-status warning">Uyarı</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="event-item">
+          <div class="event-date">
+            <span>25</span>
+            <p>Şubat 2025</p>
+          </div>
+          <div class="event-content">
+            <h4>Ankara'da Orman Yangını</h4>
+            <p>Ankara'nın Kızılcahamam ilçesinde orman yangını çıktı. Yangın kontrol altına alındı.</p>
+            <div class="event-status controlled">Kontrol Altında</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-lg-12 text-center">
+        <a href="son-olaylar.html" class="view-all-btn">Tüm Olayları Görüntüle</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="about-us" id="acil-durum-haritasi">
+  <div class="container">
+      <div class="col-lg-6 offset-lg-3">
+        <div class="section-heading">
+          <h6>Coğrafi Bilgi Sistemi</h6>
+          <h4>Acil Durum Haritası</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="map-container">
+            <div id="emergency-map" style="width: 100%; height: 500px; background-color: #f5f5f5; position: relative;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="map-filter">
+            <h5><i class="fas fa-water"></i> Sel Bölgeleri</h5>
+            <label class="switch">
+              <input type="checkbox" id="flood-toggle" checked>
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="map-filter">
+            <h5><i class="fas fa-exclamation-triangle"></i> Deprem Bölgeleri</h5>
+            <label class="switch">
+              <input type="checkbox" id="earthquake-toggle" checked>
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="map-filter">
+            <h5><i class="fas fa-fire"></i> Yangın Bölgeleri</h5>
+            <label class="switch">
+              <input type="checkbox" id="fire-toggle" checked>
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="map-filter">
+            <h5><i class="fas fa-first-aid"></i> Yardım Merkezleri</h5>
+            <label class="switch">
+              <input type="checkbox" id="aid-toggle" checked>
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+
+
+<!-- Operasyonlar Bölümü Başlangıcı -->
+<section class="operations" id="operasyonlar">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-heading">
+          <h6>Saha Çalışmaları</h6>
+          <h4>Operasyonlar</h4>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="operation-item">
+          <div class="operation-icon">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <div class="operation-content">
+            <h4>Çorum Sel Bölgesi Kurtarma</h4>
+            <p>Çorum'un kuzey ilçelerindeki sel bölgesinde 27 kişi kurtarıldı ve güvenli bölgelere taşındı.</p>
+            <div class="operation-details">
+              <span><i class="fas fa-user-check"></i> 15 Personel</span>
+              <span><i class="fas fa-clock"></i> 8 Saat</span>
+            </div>
+            <div class="operation-status completed">Tamamlandı</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="operation-item">
+          <div class="operation-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="operation-content">
+            <h4>İzmir Deprem Bölgesi Tarama</h4>
+            <p>İzmir'in Seferihisar ilçesinde deprem sonrası hasar tespiti ve arama çalışmaları devam ediyor.</p>
+            <div class="operation-details">
+              <span><i class="fas fa-user-check"></i> 23 Personel</span>
+              <span><i class="fas fa-clock"></i> 12 Saat</span>
+            </div>
+            <div class="operation-status ongoing">Devam Ediyor</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="operation-item">
+          <div class="operation-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="operation-content">
+            <h4>Ankara Yangın Sonrası Yardım</h4>
+            <p>Kızılcahamam'daki yangından etkilenen bölgelere gıda ve barınma yardımı sağlanıyor.</p>
+            <div class="operation-details">
+              <span><i class="fas fa-user-check"></i> 18 Personel</span>
+              <span><i class="fas fa-clock"></i> 24 Saat</span>
+            </div>
+            <div class="operation-status active">Aktif</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-lg-12">
+        <div class="operations-map-container">
+          <h5><i class="fas fa-map-marked-alt"></i> Üye Konumları</h5>
+          <div class="operations-map">
+            <div class="member-location">
+              <div class="member-dot" style="left: 30%; top: 40%;"></div>
+              <div class="member-dot" style="left: 35%; top: 45%;"></div>
+              <div class="member-dot" style="left: 40%; top: 35%;"></div>
+              <div class="member-dot" style="left: 60%; top: 50%;"></div>
+              <div class="member-dot" style="left: 70%; top: 30%;"></div>
+              <div class="member-info">
+                <p>Aktif Saha Ekibi: 56 Personel</p>
+                <p>Hazır Ekip: 24 Personel</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Operasyonlar Bölümü Bitişi -->
+
+<!-- Hakkımızda Bölümü Başlangıcı -->
+<section class="about-us" id="hakkimizda">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-heading">
+          <h6>Ekibimiz</h6>
+          <h4>Bizi Tanıyın</h4>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="about-content">
+          <h3>Acil Yardım Yönetim Sistemi Hakkında</h3>
+          <p>2020 yılında kurulan Acil Yardım Yönetim Sistemi, afet ve acil durumlarda hızlı ve etkili müdahale sağlamak amacıyla oluşturulmuş profesyonel bir organizasyondur. Deneyimli ekibimiz, modern teknoloji ve yenilikçi yaklaşımlarla afet yönetimi alanında öncü çözümler sunmaktadır.</p>
+          <p>Misyonumuz, afet durumlarında can kayıplarını en aza indirmek, toplumun direncini artırmak ve kaynakların etkin kullanımını sağlamaktır. Vizyonumuz ise Türkiye'nin her köşesinde hızlı, güvenilir ve etkili acil durum müdahale sistemleri kurmaktır.</p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number">150+</span>
+              <p>Profesyonel Personel</p>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">500+</span>
+              <p>Gönüllü Üye</p>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">25+</span>
+              <p>İl Kapsamı</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="about-image">
+          <img src="https://bursa.afad.gov.tr/kurumlar/bursa.afad/13430/xpics/20161119_204909.jpg?mode=resize&width=1200" alt="Acil Yardım Ekibi" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Hakkımızda Bölümü Bitişi -->
+
+<section class="contact-us">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-heading">
+          <h6>İletişim</h6>
+          <h4>Bize Ulaşın</h4>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="contact-info">
+          <p><i class="fas fa-phone"></i> Acil Durum Hattı: <a href="tel:112">112</a></p>
+          <p><i class="fas fa-envelope"></i> E-posta: <a href="mailto:info@acilyardim.org">info@acilyardim.org</a></p>
+          <p><i class="fas fa-map-marker-alt"></i> Adres: Merkez Mahallesi, Yardım Caddesi No:1, Çorum</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="contact-form">
+          <form id="contact-form">
+            <div class="row">
+              <div class="col-lg-12">
+                <input type="text" name="ad" placeholder="Adınız Soyadınız" required>
+              </div>
+              <div class="col-lg-12">
+                <input type="email" name="email" placeholder="E-posta Adresiniz" required>
+              </div>
+              <div class="col-lg-12">
+                <textarea name="mesaj" placeholder="Mesajınız..." required></textarea>
+              </div>
+              <div class="col-lg-12">
+                <button type="submit" class="main-button">Mesaj Gönder</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<br>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <p> 2025 Acil Yardım Yönetim Sistemi. Tüm Hakları Saklıdır.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/operations-map.js"></script>
+</body>
+</html>
+

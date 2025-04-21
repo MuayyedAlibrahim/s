@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yardım Talep Et - Acil Yardım Yönetim Sistemi</title>
+
+    <!-- Google Fonts yazma tipi -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/emergency-style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Bootstrap CSS kütübhanesi -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+
+    <!-- Font Awesome CSS kütüphanesi -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Leaflet CSS kütüphanesi -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <!-- jQuery.JS kütübhanesi -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- bootstrap.bundle.JS kütübhanesi -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/mobile-menu.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="main-nav">
+                <a href="#" class="logo">ACİL YARDIM YÖNETİM SİSTEMİ <i class="fa-solid fa-ambulance"></i></a>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="son-olaylar.html">Son Olaylar</a></li>
+                    <li><a href="Giriş-Yap.html">Giriş Yap</a></li>
+                    <li><a href="Kayıt-Ol.html">Kayıt Ol</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+<section class="about-us" id="yardim-talep-et">
+    <div class="container">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading">
+            <h6>Yardım Talebi</h6>
+            <br>
+            <h4>İhtiyaçlarınızı Belirtin</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <form id="yardim-talep-form" class="contact-form">
+              <div class="row">
+                <div class="col-lg-6">
+                  <input type="text" name="ad" placeholder="Adınız Soyadınız" required>
+                </div>
+                <div class="col-lg-6">
+                  <input type="tel" name="telefon" placeholder="Telefon Numaranız" required>
+                </div>
+                <div class="col-lg-12">
+                  <input type="text" name="konum" placeholder="Konum (Adres)" required>
+                </div>
+                <div class="col-lg-12">
+                  <select name="yardim-tipi" required>
+                    <option value="" disabled selected>Yardım Tipi</option>
+                    <option value="gida">Gıda</option>
+                    <option value="barinma">Barınma</option>
+                    <option value="giyim">Giyim</option>
+                    <option value="saglik">Sağlık Malzemesi</option>
+                    <option value="diger">Diğer</option>
+                  </select>
+                </div>
+                <div class="col-lg-12">
+                  <textarea name="aciklama" placeholder="İhtiyaçınız hakkında detaylı bilgi veriniz..." required></textarea>
+                </div>
+                <div class="col-lg-12">
+                  <button type="submit" class="main-button">Yardım Talep Et</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doküman</title>
+
+
+    <!-- Google Fonts yazma tipi -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/Kayıt-Ol.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/Kayıt-Ol.js"></script>
+
+<!-- Flatpickr Kütüphanesi -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        <!-- Bootstrap CSS kütübhanesi -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+
+        <!-- all.min.CSS kütübhanesi -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <!-- Owl Carousel CSS kütübhanesi -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- jQuery.JS kütübhanesi -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- bootstrap.bundle.JS kütübhanesi -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/mobile-menu.js"></script>
+</head>
+<body>
+    
+  <header>
+    <div class="container">
+        <nav class="main-nav">
+            <a href="#" class="logo">Acil Yardım  Yönetim Sistem <i class="fa-solid fa-code"></i></a>
+            <ul>
+              <li><a href="index.html" >Ana Sayfa</a></li>
+              <li><a href="Giriş-Yap.html">Giriş Yap</a></li>
+              <li><a href="Kayıt-Ol.html" class="active" >Kayıt Ol</a></li>
+          </ul>
+        </nav>
+    </div>
+  </header>
+
+    
+      <section class="calculator" id="calculator">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <div class="left"></div>
+            </div>
+            <div class="section-heading-con">
+              <h4>İlk Yardım Ve Uyarılar Almak İçin Kayıt Ol</h4>
+            </div>
+            <form id="calculate" action="submit.php" method="post">
+              <div class="row">
+                <div class="col-lg-6">
+                  <fieldset>
+                    <label for="name">Adınız</label>
+                    <input type="text" name="name" id="name" placeholder="Adınızı Girin" autocomplete="on" required>
+                  </fieldset>
+                </div>
+                <div class="col-lg-6">
+                  <fieldset>
+                    <label for="surname">Soyadınız</label>
+                    <input type="text" name="surname" id="surname" placeholder="Soyadınızı Girin" autocomplete="on" required>
+                  </fieldset>
+                </div>
+                <div class="col-lg-6">
+                  <fieldset>
+                    <label for="birthdate">Doğum Tarihi</label>
+                    <input type="date" name="birthdate" id="birthdate" required>
+                </fieldset>>
+                </div>
+                <div class="col-lg-6">
+                  <fieldset>
+                    <label for="birthplace">Doğum Yeri</label>
+                    <input type="text" name="birthplace" id="birthplace" placeholder="Doğum Yerinizi Girin" autocomplete="on" required>
+                  </fieldset>
+                </div>>
+
+                <div class="col-lg-12"></div>
+                <fieldset>
+                  <label for="phone">Telefon </label>
+                  <input type="tel" name="phone" id="phone" placeholder="Telefon Numaranızı Girin" autocomplete="on" required pattern="[0-9]{10}" title="Lütfen 10 haneli telefon numarası girin">
+                </fieldset>
+                <!-- E-posta Alanı -->
+                <fieldset>
+                  <label for="email">E-posta Adresiniz</label>
+                  <input type="email" name="email" id="email" placeholder="E-posta Adresinizi Girin" autocomplete="on" required>
+                </fieldset>
+
+                <!-- Şifre Alanı -->
+                <fieldset>
+                  <label for="password">Şifreniz</label>
+                  <input type="password" name="password" id="password" placeholder="Şifrenizi Girin" autocomplete="new-password" required>
+                </fieldset>
+
+                <fieldset>
+                  <label for="gender" class="form-label">Cinsiyet</label>
+                  <select name="gender" class="form-select" id="gender" autocomplete="on" required>
+                    <option value="" disabled selected>Cinsiyet Seçiniz</option>
+                    <option value="ERKEK">ERKEK</option>
+                    <option value="KADIN">KADIN</option>
+                  </select>
+                  
+                </fieldset>
+
+                  <fieldset>
+                    <label for="bloodType" class="form-label">Kan Grubu</label>
+                    <select name="bloodType" class="form-select" id="bloodType" autocomplete="on" required>
+                      <option value="" disabled selected>Kan Grubunuzu Seçiniz</option>
+                      <option value="A+">A+</option>
+                      <option value="A-">A-</option>
+                      <option value="B+">B+</option>
+                      <option value="B-">B-</option>
+                      <option value="AB+">AB+</option>
+                      <option value="AB-">AB-</option>
+                      <option value="0+">0+</option>
+                      <option value="0-">0-</option>
+                    </select>
+                    
+                  </fieldset>
+                  <fieldset>
+                    <label for="province">İl:</label>
+                    <select id="province" name="province" required>
+                      <option value="">Bir il seçin</option>
+                    </select>
+                  </fieldset>
+
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="orange-button">Kayıt Ol</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <br>
+        <section class="map">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div id="map" style="height: 350px;"></div> <!-- Harita konteyneri -->
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      
+      
+    
+      <!-- Alt Bilgi Başlangıcı -->
+      <footer>
+        <div class="container">
+            <div class="col-lg-12">
+              <p>Tüm Hakları Saklıdır © 2024. Tasarlayan: <a href="https://muayyedalibrahim.github.io/.com" target="_blank">MUAYYED ALİBRAHİM</a></p>
+            </div>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-tiktok"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+      </footer>
+      
+</body>
+</html>
